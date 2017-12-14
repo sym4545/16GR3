@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.qhit.lh.gr3.ming.bean.User" table="db_user">
+<id name="id" column="id" type="integer">
+	<!--主键自增  --> 
+	<generator class="native">
+	</generator>
+</id>
+<property name="uname" column="uname" type="string"></property>
+<property name="upwd" column="wpwd" type="string"></property>
+<property name="age" column="age" type="integer"></property>
+<property name="phone" column="phone" type="string"></property>
+</class>
+</hibernate-mapping>

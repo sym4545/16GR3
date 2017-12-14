@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.qhit.lh.gr3.ming.bean.Emp" table="t_emp">
+<id name="eid" column="eid" type="integer">
+	<!--主键自增  --> 
+	<generator class="native">
+	</generator>
+</id>
+<property name="ename" column="ename" type="string"></property>
+<property name="sex" column="sex" type="string"></property>
+<property name="old" column="old" type="integer"></property>
+
+<one-to-one name="user" class="com.qhit.lh.gr3.ming.bean.User" cascade="all"></one-to-one>
+</class>
+
+
+</hibernate-mapping>
